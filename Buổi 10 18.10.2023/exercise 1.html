@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 1</title>
+</head>
+<body>
+    <h1 id = "title">Python Course Syllabus</h1><br>
+    <!-- ul: unordered list -->
+    <!-- li: list item -->
+    <ul id = "Javascript Course Syllabus">
+        <li id = "lession 1">Welcome to Python</li>
+        <li id = "lession 2">Python Fundamental</li>
+        <li id = "lession 3">Python Intermmediate</li>
+    </ul>
+    <script>
+        let titleElem = document.getElementById("title");
+        let lession1Elem = document.getElementById("lession 1");
+        let lession2Elem = document.getElementById("lession 2");
+        let lession3Elem = document.getElementById("lession 3");
+
+        console.log(titleElem);
+
+        // thay đổi nội dung element
+        titleElem.innerText = "Javascript Course Syllabus";
+        lession1Elem.innerText = "Welcome to Javascript";
+        lession2Elem.innerText = "Javascipt Fundamental";
+        lession3Elem.innerText = "Javascipt Intermmediate";
+    </script>
+</body>
+</html>

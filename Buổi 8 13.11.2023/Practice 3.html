@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Practice 3</h1>
+    <p>Một đoàn tàu mỗi giờ đi được 33 km. <br>
+        a. Hỏi trung bình mỗi phút đoàn tàu đó đi được bao nhiêu mét?<br>
+        b. Hỏi sau 1 giờ 12 phút đoàn tàu đó đi được bao nhiêu km?</p>
+        <script>
+            // Câu a
+            let kmTaudi = parseInt(prompt("Nhập số km tàu đi được (km): "));
+            let kmMoiphutdi = (kmTaudi/60) * 1000;
+            alert(kmMoiphutdi);
+            // Câu b
+            let soGiodi = parseInt(prompt("Nhập số giờ tàu đi (giờ): "));
+            let kmTaudi1h12p = (soGiodi*kmTaudi) / 60;
+            alert(kmTaudi1h12p);
+
+        </script>
+</body>
+</html>

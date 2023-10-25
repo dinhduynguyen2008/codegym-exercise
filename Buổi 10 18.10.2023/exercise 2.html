@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 2 - HTML DOM</title>
+  </head>
+  <body>
+    <h1 id="Title Menu">Coffe Shop Menu</h1>
+    <ul id="drink menu">
+      <li>Coffee</li>
+      <li>Capuchino</li>
+      <li>Milk Tea</li>
+      <li>Tropical Fruit Tea</li>
+      <li id="pTea">Peach Tea</li>
+    </ul>
+    <button id="btn-update">Update Menu</button>
+    <script>
+      let btnUpdate = document.getElementById("btn-update");
+      // thêm thao tác xử lý khi click button
+      btnUpdate.addEventListener("click", () => {
+        // alert("button update is clicked");
+        // muốn kiểm tra bên console thì thêm thao tác này
+        // console.log("button is clicked");
+
+        let TeaElem = document.getElementById("Title Menu");
+        let drinkMenuElem = document.getElementById("drink menu");
+        let pTeaElem = document.getElementById("pTea");
+
+        // 1. đổi màu title
+        let MenuElem = document.getElementById("Title Menu");
+        console.log("Title Menu");
+        MenuElem.style.color = "red";
+        // 2. xóa element Peach tea
+        pTeaElem.remove();
+
+        // 3. thêm một element mới Fruit yogurt
+        let newTeaElem = document.createElement("li");
+        newTeaElem.innerText = "Fruit yogurt";
+
+        drinkMenuElem.appendChild(newTeaElem);
+      });
+    </script>
+  </body>
+</html>
