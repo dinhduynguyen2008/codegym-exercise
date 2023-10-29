@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>Nhập giá trị a</label>
+    <input type="number" id ="gia-tri-a"> <br>
+
+    <label>Nhập giá trị b</label>
+    <input type="number" id="gia-tri-b"> <br>
+
+    <button id = "ket-qua" type="button">Kết quả</button>
+    <p id ="result"></p>
+
+    <script>
+        let btnAction = document.getElementById("ket-qua");
+        let resulElem = document.getElementById("result");
+        btnAction.addEventListener("click", () => {
+            let aElem = parseInt(document.getElementById("gia-tri-a").value);
+            let bElem = parseInt(document.getElementById("gia-tri-b").value);
+            
+            if (aElem + bElem < 4) {
+                resulElem.innerHTML= ("Below");
+            } else {
+                resulElem.innerHTML = ("Over");
+            }
+        })
+    </script>
+
+</body>
+</html>
