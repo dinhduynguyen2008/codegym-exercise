@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>demo break contineu</title>
+</head>
+<body>
+    <h1>demo break contineu</h1>
+    <p>Viết chương trình in ra 10 số nguyên đầu tiên chia hết cho 5
+        trong khoảng từ 0 đến 100, trừ 15 và 25.
+    </p>
+
+    <script>
+         let count = 0;   //đếm (tracking) số lượng kết quả đã in ra
+
+        for ( let i = 0; i <= 100 ; i += 5) {
+            if (i == 15 || i == 25) {
+                // không thực hiện body của vòng lặp trong điều kiện này
+                // và đi đến lần lặp tiếp theo
+                continue;
+            }
+            console.log (i);
+            count += 1;
+
+            if (count == 10) {
+                // nếu đã có đủ 10 kết quả thì dừng vòng lặp
+                break; 
+            }
+        }
+    </script>
+</body>
+</html>

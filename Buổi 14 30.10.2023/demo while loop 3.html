@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>demo while loop 3</title>
+</head>
+<body>
+    <h1>Demo While Loop 3</h1>
+    <p>Viết chương trình nhập vào họ và tên của người dùng.
+        Nếu họ và tên ít hơn 6 ký tự thì yêu cầu người dùng nhập lại. 
+        Sau khi nhập thông tin hợp lệ thì in ra giá trị ở phần console
+    </p>
+
+    <script>
+        let fullName = prompt("Nhập họ và tên: ");
+
+        // Vòng lặp không biết trước số lần lặp
+        while (fullName.length < 6) {
+            alert ("Họ và tên phải có tối thiểu 6 ký tự");
+            fullName = prompt("Nhập họ và tên: ");
+        }
+        console.log(fullName);
+    </script>
+</body>
+</html>
