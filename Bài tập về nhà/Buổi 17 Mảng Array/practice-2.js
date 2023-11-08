@@ -2,10 +2,8 @@
 let array1 = ["M", "na", "i", "Ke"];
 let array2 = ["y", "me", "s", "lly"];
 let array3 = [ ]
-if (array1.length === array2.length) {
     for (let i = 0; i < array1.length; i++) {
        
      array3.push(array1[i] + array2[i]);
     }
 console.log(array3);  // Output: ['My', 'name', 'is', 'Kelly']
-}
