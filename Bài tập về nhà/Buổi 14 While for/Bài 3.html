@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    h2>Bài 3</h2>
+    <p>Viết chương trình nhập vào chiều cao tam giác vuông và in ra tam giác có hình dạng như sau: <br>
+        ***** <br>
+        **** <br>
+        *** <br>
+        ** <br>
+        * <br>
+    </p>
+
+    <form action="">
+        <label for="">Nhập chiều cao tam giác: </label>
+        <input type="number">
+        <button type="button">Submit</button>
+    </form>
+    <script>
+        let height = 5;
+        let i = height;
+
+        while (i >=1 ) {
+            console.log('*'.repeat(i));
+            i -=1;
+        }
+    </script>
+</body>
+</html>
